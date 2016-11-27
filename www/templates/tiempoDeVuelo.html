@@ -1,0 +1,33 @@
+<ion-view cache-view="false" title="Tiempo de vuelo" id="page4">
+  <ion-content padding="true" style="background: url(img/rWWogkMpScmC7UjnLzya_cielospl.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <img src="img/VrEmIkKbTXGwUGrBqS9w_header.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <h5 id="tiempoDeVuelo-heading2" style="color:#000000;">Caculadora de Tiempo de vuelo</h5>
+    <div id="tiempoDeVuelo-container2">
+       <label class="item item-input" id="vueloEspecial-input26">
+          <span class="input-label">Fecha</span>
+          <input type="date" data-ng-model="fechav" placeholder="Fecha">
+        </label>
+      <form id="tiempoDeVuelo-form5" class="list">
+
+      <label class="item item-input" id="tiempoDeVuelo-input10">
+          <span class="input-label">Vuelo</span>
+          <input type="text" data-ng-model="vuelov" placeholder="">
+        </label>
+        <label class="item item-input" id="tiempoDeVuelo-input10">
+          <span class="input-label">Inicio Vuelo</span>
+          <input type="time" data-ng-model="inicio" placeholder="">
+        </label>
+        <label class="item item-input" id="tiempoDeVuelo-input11">
+          <span class="input-label">Termino Vuelo</span>
+          <input type="time"  data-ng-model="termino" placeholder="">
+        </label>
+        <button id="tiempoDeVuelo-button9" class="button button-positive button-block " data-ng-click="calcularTiempoVuelo(this)" button-block">Calcular</button>
+        <label class="item item-input" id="tiempoDeVuelo-input12">
+          <span class="input-label">Tiempo Vuelo</span>
+          <input type="text" value="{{tiempovueloform}} hrs" placeholder="">
+        </label>
+         <button id="tiempoDeVuelo-button25-guardar" data-ng-click="GuardarDatosTV()" class="button button-positive   button-block">Guardar</button>
+      </form>
+    </div>
+  </ion-content>
+</ion-view>

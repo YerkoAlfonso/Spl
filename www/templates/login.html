@@ -1,0 +1,27 @@
+<ion-view title="Login" id="page5">
+<ion-content padding="true" style="background: url(img/rWWogkMpScmC7UjnLzya_cielospl.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <img src="img/VrEmIkKbTXGwUGrBqS9w_header.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <form id="login-form6" class="list" name="frmlogin">
+      <ion-list id="login-list2">
+        <label class="item item-input" id="login-input13">
+          <span class="input-label">Usuario</span>
+          <input type="text" name="nom_usuario" data-ng-model ="FromData.nom_usuario" placeholder="Usuario" required>
+           <span class="input-label" ng-show="!frmlogin.$pristine && frmlogin.nom_usuario.$error.required"> X</span>
+        </label>
+        <label class="item item-input" id="login-input14">
+          <span class="input-label">Contraseña</span>
+          <input type="password" name ="password" data-ng-model ="FromData.password" placeholder="Contraseña" required>
+                     <span class="input-label" ng-show="!frmlogin.$pristine && frmlogin.password.$error.required">X</span>
+
+        </label>
+      </ion-list>
+      <div class="spacer" style="height: 40px;"></div>
+      <a data-ng-click="login(FromData)" id="login-button10" class="button button-stable  button-block">Log in</a>
+      <a ui-sref="signup" id="login-button21" class="button button-positive  button-block button-clear">Or create an account</a>
+
+      <label class="item item-input" id="vueloOrdinario-input5">
+        <span class="input-label"><font color="red">{{alerta_lo}}</font></span>
+      </label>
+    </form>
+  </ion-content>
+</ion-view>

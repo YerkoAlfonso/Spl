@@ -1,0 +1,65 @@
+<ion-view title="Wait Body" id="page10">
+<ion-content padding="true" style="background: url(img/rWWogkMpScmC7UjnLzya_cielospl.jpg) no-repeat center;background-size:cover;" class="has-header">
+    <img src="img/VrEmIkKbTXGwUGrBqS9w_header.png" style="display: block; width: 100%; height: auto; margin-left: auto; margin-right: auto;">
+    <h3 id="vueloEspecial-heading4" style="color:#000000;">Periodo de Vuelo</h3>
+    <div id="vueloEspecial-container3">
+      <form id="vueloEspecial-form8" class="list">
+         <ion-toggle toggle-class="toggle-dark" data-ng-model="dia_noche" id="vueloEspecial-toggle9">Dia/Noche</ion-toggle>
+ <label class="item item-select" id="mostrarDatos-select2">
+        <span class="input-label">Pilotos</span>
+         <select data-ng-model="contador" ng-options="lista.id as lista.texto  for lista in lista" ng-change="cantidadPilotos(lista[contador])">
+      </select>
+      </label>
+        <label class="item item-input" id="vueloEspecial-input25">
+          <span class="input-label">F. Log</span>
+          <input data-ng-model="n" type="text" placeholder="N">
+        </label>
+             <label class="item item-input" id="vueloEspecial-input65">
+          <span class="input-label">Origen</span>
+          <input data-ng-model="origen" type="text" placeholder="origen">
+        </label>
+             <label class="item item-input" id="vueloEspecial-input35">
+          <span class="input-label">Destino</span>
+          <input data-ng-model="destino" type="text" placeholder="destino">
+        </label>
+        <label class="item item-input" id="vueloEspecial-input26">
+          <span class="input-label">Fecha</span>
+          <input type="date" data-ng-model="fecha" placeholder="Fecha">
+        </label>
+        <label class="item item-input" id="vueloEspecial-input27">
+          <span class="input-label">Vuelo</span>
+          <input type="text" data-ng-model="vuelo" placeholder="Vuelo">
+        </label>
+        <label class="item item-input" id="vueloEspecial-input18">
+          <span class="input-label">IPSV</span>
+          <input type="time" data-ng-model="ipsv" placeholder="IPSV">
+        </label>
+        <label class="item item-input" id="vueloEspecial-input19">
+        <span class="input-label">TPSU</span>
+        <input type="time" data-ng-model="tpsu" placeholder="TPSU">
+      </label>
+
+              <button id="vueloEspecial-button25-cal" data-ng-click="calcularHorasServicio(this)" class="button button-positive  button-block">Calcular</button>
+<label class="item item-input" id="vueloOrdinario-input5">
+        <span class="input-label"><font color="red">{{alerta_h}}</font></span>
+      </label>
+      </form>
+    </div>
+    <form id="vueloEspecial-form9" class="list">
+            <label class="item item-input" id="vueloEspecial-input20">
+        <span class="input-label">P.S.V</span>
+        <input type="text" value="{{transcurridoHoras}} Hrs"   placeholder="">
+      </label>
+      <label class="item item-input" id="vueloEspecial-input21">
+        <span class="input-label">P.D</span>
+        <input type="text" value="{{horaspd}} Hrs"  placeholder="">
+      </label>
+              <label class="item item-input" id="vueloEspecial-input8">
+        <span class="input-label">NIPS</span>
+        <input type="text" value="{{horaspps}} Hrs" placeholder="">
+      </label>
+                  <button id="vueloEspecial-button25-guardar" data-ng-click="GuardarDatos()" class="button button-positive   button-block">Guardar</button>
+
+    </form>
+  </ion-content>
+</ion-view>
