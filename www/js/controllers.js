@@ -1279,7 +1279,7 @@ $scope.alerta_lo = "Usuario y/o contraseña incorrecta";
 }])
    
 .controller('signupCtrl', 
-  function ($scope, $stateParams,$ionicHistory) {
+  function ($scope, $stateParams,$ionicHistory,$ionicPopup) {
 
 $scope.registrar = function(cxt){
  var pass = cxt.contra;
@@ -1303,6 +1303,11 @@ var usuario = {
 
         console.log("Se inserto en bd local");
         console.log(result);
+        var alertPopUp = $ionicPopup.alert ({
+  title: 'Registrado ',
+  template:  'Ahora puedo acceder a spl'
+});
+
                 $ionicHistory.goBack();
 
       }
