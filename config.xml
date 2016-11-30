@@ -16,7 +16,8 @@
      following tag to your config.xml; you will still have the INTERNET  
      permission on your app, which PhoneGap requires.  
    -->  
-
+ <access origin="*"/>  
+   <content src="index.html"/>
    <preference name="permissions"        value="none"/>  
    <!-- Customize your app and platform with the preference element. -->  
    <preference name="phonegap-version"      value="3.5.0" />     <!-- all: current version of PhoneGap -->  
@@ -95,8 +96,7 @@
      <access origin="*" /> - a wildcard access tag allows access to all external resource.  
      Otherwise, you can specify specific domains:  
    -->  
-   <access origin="*"/>  
-   <content src="index.html"/>
+  
    <!--  
      <access origin="http://phonegap.com" />          - allow any secure requests to http://phonegap.com/  
      <access origin="http://phonegap.com" subdomains="true" /> - same as above, but including subdomains, such as http://build.phonegap.com/  
